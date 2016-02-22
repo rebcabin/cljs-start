@@ -14,4 +14,8 @@ Run `scripts/setup.sh`, this downloads ClojureScript and tooling for development
 
 ### Node repl
 
-Run `scripts/base_node_repl.sh`. This runs the following command `java -cp lib/cljs.jar:src clojure.main build/node_repl.clj`
+Run `scripts/base_node_repl.sh`. This runs the following command `java -cp lib/*:src clojure.main build/node_repl.clj`
+
+### Browser repl
+
+Run `scripts/base_browser_repl.sh`. This runs the following command  `java -cp lib/*:src clojure.main build/browser_repl.clj`
