@@ -1,4 +1,4 @@
-(ns start.core
+(ns node.start.core
   (:require [cljs.nodejs :as nodejs]))
 
 (nodejs/enable-util-print!)

@@ -1,4 +1,4 @@
-(ns start.core
+(ns browser.start.core
   (:require [clojure.browser.repl :as repl]))
 
 (defonce conn
