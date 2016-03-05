@@ -4,7 +4,7 @@
   :license  {:name "Eclipse Public License"
              :url "http://www.eclipse.org/legal/epl-v10.html"}
 
-  :clean-targets ^{:protect false}  ["resources/out"]
+  :clean-targets ^{:protect false}  ["resources/public/js" "resources/brwoser_repl" "resources/node_repl"]
 
   :source-paths  ["src"]
 
