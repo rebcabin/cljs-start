@@ -4,7 +4,7 @@
 
 (cljs.build.api/build
   "src/browser"
-  {:main 'browser.start.core
+  {:main 'start.core
    :output-to "resources/browser_repl/main.js"
    :output-dir "resources/browser_repl"
    :verbose true})

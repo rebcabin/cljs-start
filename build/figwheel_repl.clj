@@ -7,8 +7,8 @@
    :all-builds
    [{:id "dev"
      :figwheel true
-     :source-paths  ["src"]
-     :compiler  {:main 'browser.start.core
+     :source-paths  ["src/figwheel"]
+     :compiler  {:main 'start.core
                  :asset-path "js"
                  :output-to "resources/public/js/app.js"
                  :output-dir "resources/public/js"

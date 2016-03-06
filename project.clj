@@ -6,7 +6,7 @@
 
   :clean-targets ^{:protect false}  ["resources/public/js" "resources/brwoser_repl" "resources/node_repl"]
 
-  :source-paths  ["src"]
+  :source-paths  ["src/main"]
 
   :jvm-opts ^:replace  ["-Xms512m" "-Xmx512m" "-server"]
 
@@ -16,5 +16,8 @@
                   [org.clojure/tools.nrepl "0.2.11"]
                   [figwheel-sidecar "0.5.0-6"]]
 
-  :profiles  {:dev  {:repl-options  {:nrepl-middleware  [cemerick.piggieback/wrap-cljs-repl]
-                                     :init (require 'cljs.repl.node)}}})
+  :profiles  {:browser {:source-paths ["src/browser"]
+                        :repl-options  {:nrepl-middleware  [cemerick.piggieback/wrap-cljs-repl]}}
+              :node  {:source-paths ["src/node"]
+                      :repl-options  {:nrepl-middleware  [cemerick.piggieback/wrap-cljs-repl]
+                                      :init (require 'cljs.repl.node)}}})
