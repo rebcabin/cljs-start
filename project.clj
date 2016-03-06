@@ -11,10 +11,10 @@
   :jvm-opts ^:replace  ["-Xms512m" "-Xmx512m" "-server"]
 
   :dependencies  [[org.clojure/clojure "1.7.0"]
-                  [org.clojure/clojurescript "1.7.228"]]
+                  [org.clojure/clojurescript "1.7.228"]
+                  [com.cemerick/piggieback "0.2.1"]
+                  [org.clojure/tools.nrepl "0.2.11"]
+                  [figwheel-sidecar "0.5.0-6"]]
 
-  :profiles  {:dev  {:dependencies  [[com.cemerick/piggieback "0.2.1"]
-                                     [org.clojure/tools.nrepl "0.2.11"]
-                                     [figwheel-sidecar "0.5.0-6"] ]
-                     :repl-options  {:nrepl-middleware  [cemerick.piggieback/wrap-cljs-repl]
+  :profiles  {:dev  {:repl-options  {:nrepl-middleware  [cemerick.piggieback/wrap-cljs-repl]
                                      :init (require 'cljs.repl.node)}}})
