@@ -5,3 +5,6 @@ resources/public/*
 !resources/public/index.html
 resources/browser_repl/*
 resources/node_repl/*
+node_modules/
+.idea/
+.nrepl_port
