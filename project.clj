@@ -17,7 +17,8 @@
                   [figwheel-sidecar "0.5.0-6"]
                   [binaryage/devtools "0.5.2"]]
 
-  :profiles  {:browser {:source-paths ["src/browser"]
+  :profiles  {:figwheel {:source-paths ["src/figwheel"]}
+              :browser {:source-paths ["src/browser"]
                         :repl-options  {:nrepl-middleware  [cemerick.piggieback/wrap-cljs-repl]}}
               :node  {:source-paths ["src/node"]
                       :repl-options  {:nrepl-middleware  [cemerick.piggieback/wrap-cljs-repl]
