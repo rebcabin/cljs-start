@@ -10,12 +10,14 @@
 
 ### Setup
 
-Run `scripts/setup.sh`, this downloads ClojureScript and tooling for development
+Run `scripts/setup.sh`, this downloads the ClojureScript jar file. This is needed to run the base repls.
+Run `lein deps` to install the tools for the figwheel, cljs-dev-tools, and dirac repls
+
 
 ### Node repl
 
-Run `scripts/base_node_repl.sh`. This runs the following command `java -cp lib/*:src clojure.main build/node_repl.clj`
+Run `scripts/base_node_repl.sh`. This runs the following command `java -cp lib/*:src/node clojure.main build/node_repl.clj`
 
 ### Browser repl
 
-Run `scripts/base_browser_repl.sh`. This runs the following command  `java -cp lib/*:src clojure.main build/browser_repl.clj`
+Run `scripts/base_browser_repl.sh`. This runs the following command  `java -cp lib/*:src/browser clojure.main build/browser_repl.clj`
