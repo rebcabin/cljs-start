@@ -1,16 +1,29 @@
 !SLIDE
 
-#Barcalounger ClojureScript: Stylish and Comfortable ClojureScript Development
+# Barcalounger ClojureScript
+## Stylish and Comfortable ClojureScript Development
+
 ## by Peter Schuck
 ## @spinningtopsofdoom
 
-!SLIDE bullets incremental transition=fade
+!SLIDE small
 
-- ClojureScript has always had a great story for production
-- The development environment however...
+## ClojureScript has always had a great story for production
+- Dead code elimination
+- Great dependency management and resolution
+- First class data structures and libraries (e.g. core.aysnc)
+- Module support
 
-!SLIDE bullets incremental transition=fade
+!SLIDE transition=fade
 
-- Previously ClojureScript development was like developing on IE6
-- JavaScript development was like firefox with firebug
-- Now ClojureScript development is like chrome with dev tools
+## ClojureScript development tooling however...
+
+!SLIDE transition=fade
+
+![Internet Explorer 6 debugging](http://icant.co.uk/forreview/browsertests/msie_js_error.gif)
+
+!SLIDE bullets incremental transition=scrollUp
+
+- Needed lein and three different plugins to work semi correctly
+- Compilation was slow and buggy
+- Fragile jenga tower that would break with slight nudges
