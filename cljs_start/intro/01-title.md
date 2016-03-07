@@ -6,5 +6,11 @@
 
 !SLIDE bullets incremental transition=fade
 
-- ClojureScript has always been leader in production ready JavaScript
+- ClojureScript has always had a great story for production
 - The development environment however...
+
+!SLIDE bullets incremental transition=fade
+
+- Previously ClojureScript development was like developing on IE6
+- JavaScript development was like firefox with firebug
+- Now ClojureScript development is like chrome with dev tools
