@@ -4,8 +4,9 @@
 
 (cljs.build.api/build
   "src/node"
-  {:main 'start.core
+  {:target :nodejs
    :output-to "resources/node_repl/main.js"
+   :output-dir "resources/node_repl"
    :verbose true})
 
 (cljs.repl/repl
