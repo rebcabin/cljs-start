@@ -1,0 +1,15 @@
+.gray { color: #999; }
+body .smbullets > ul > li { list-style-type: none; margin-left: 0; }
+body .smbullets.content > ul { padding-left: 0; }
+strong {
+  background-color: gray;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+body .slide {
+  background: black;
+}
+body .content {
+  color: #DDD;
+}

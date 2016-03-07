@@ -1,0 +1,4 @@
+{ "name": "Barcalounger ClojureScript: How to setup a stylish and comfortable ClojureScript development environment ",
+  "highlight": "solarized_dark",
+  "sections": [
+      {"section":"cljs_start/intro"} ]}
