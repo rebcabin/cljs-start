@@ -6,20 +6,25 @@ Download [ClojureScript](https://github.com/clojure/clojurescript/releases/downl
 
 [rlwrap](http://utopia.knoware.nl/~hlub/uck/rlwrap/)  makes base command line repl much more usable
 
-!SLIDE bullets transition=slideUp
+!SLIDE bullets incremental
 
-- Benefits
+# Benefits
   - Very Portable
   - Better understanding of ClojureScript
   - Less fragile
 
-!SLIDE transition=fade
+!SLIDE
 
 # One line of bash
     @@@ bash
     java -cp cljs.jar:<cljs dir> repl.clj
 
-!SLIDE small transition=fade
+# or
+
+    @@@ bash
+    lein run -m clojure.main repl.clj
+
+!SLIDE small
 
 # Node Setup
 
@@ -32,6 +37,7 @@ Download [ClojureScript](https://github.com/clojure/clojurescript/releases/downl
       "src/node"
       {:target ':nodejs
        :output-to "node_repl/app.js"
+       :output-dir "node_repl"
        :verbose true})
 
     (cljs.repl/repl
@@ -40,7 +46,7 @@ Download [ClojureScript](https://github.com/clojure/clojurescript/releases/downl
       :output-dir "node_repl")
 
 
-!SLIDE small transition=fade
+!SLIDE small
 
 # Browser Setup ClojureScript Side
 
