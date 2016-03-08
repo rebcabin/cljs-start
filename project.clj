@@ -17,7 +17,11 @@
                   [figwheel-sidecar "0.5.0-6"]
                   [binaryage/devtools "0.5.2"]]
 
-  :profiles  {:dirac {:source-paths ["src/dirac"]}
+  :profiles  {:dirac {:source-paths ["src/dirac"]
+                      :repl-options {:nrepl-middleware [dirac.nrepl.middleware/dirac-repl]
+                                     :init (do
+                                             (require 'dirac.agent)
+                                             (dirac.agent/boot!))} }
               :devtools {:source-paths ["src/devtools"]}
               :figwheel {:source-paths ["src/figwheel"]}
               :browser {:source-paths ["src/browser"]
