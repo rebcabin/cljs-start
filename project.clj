@@ -15,13 +15,15 @@
                   [com.cemerick/piggieback "0.2.1"]
                   [org.clojure/tools.nrepl "0.2.11"]
                   [figwheel-sidecar "0.5.0-6"]
-                  [binaryage/devtools "0.5.2"]]
+                  [binaryage/devtools "0.5.2"]
+                  [binaryage/dirac "0.1.3"]]
 
   :profiles  {:dirac {:source-paths ["src/dirac"]
-                      :repl-options {:nrepl-middleware [dirac.nrepl.middleware/dirac-repl]
+                      :repl-options {:port 8230
+                                     :nrepl-middleware [dirac.nrepl.middleware/dirac-repl]
                                      :init (do
                                              (require 'dirac.agent)
-                                             (dirac.agent/boot!))} }
+                                             (dirac.agent/boot!))}}
               :devtools {:source-paths ["src/devtools"]}
               :figwheel {:source-paths ["src/figwheel"]}
               :browser {:source-paths ["src/browser"]

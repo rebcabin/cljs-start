@@ -11,6 +11,7 @@
 
 (cljs.repl/repl
   (cljs.repl.browser/repl-env)
+  :main 'start.core
   :watch "src/browser"
   :output-dir "resources/browser_repl"
   :output-to "resources/browser_repl/main.js")
