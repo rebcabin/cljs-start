@@ -133,7 +133,8 @@
 
     @@@ clojure
     :repl-options
-      {:nrepl-middleware [dirac.nrepl.middleware/dirac-repl]
+      {:port 8230
+       :nrepl-middleware [dirac.nrepl.middleware/dirac-repl]
        :init (do
                (require 'dirac.agent)
                (dirac.agent/boot!))}}
