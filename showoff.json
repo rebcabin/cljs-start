@@ -2,5 +2,6 @@
   "highlight": "solarized_dark",
   "sections": [
       {"section":"cljs_start/intro"},
+      {"section":"cljs_start/cljs_api"},
       {"section":"cljs_start/base_cljs"}
   ]}
