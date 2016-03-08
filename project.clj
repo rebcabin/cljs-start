@@ -1,4 +1,4 @@
-(defproject cljs-start "0.1.0-SNAPSHOT"
+(defproject cljs-start "0.1.0"
   :description "Sample starting project for ClojureScript REPL"
 
   :license  {:name "Eclipse Public License"
