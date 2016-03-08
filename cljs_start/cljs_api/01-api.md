@@ -6,6 +6,7 @@
 
 # Compilation functions
 ## Just normal clojure functions
+## Covered in [ClojureScript Quick Start](https://github.com/clojure/clojurescript/wiki/Quick-Start)
 
 !SLIDE
 

@@ -16,6 +16,7 @@ Download [ClojureScript](https://github.com/clojure/clojurescript/releases/downl
 !SLIDE
 
 # One line of bash
+
     @@@ bash
     java -cp cljs.jar:<cljs dir> repl.clj
 
@@ -23,6 +24,22 @@ Download [ClojureScript](https://github.com/clojure/clojurescript/releases/downl
 
     @@@ bash
     lein run -m clojure.main repl.clj
+
+
+!SLIDE small
+
+# Node Setup ClojureScript Setup
+
+    @@@ clojure
+    (ns start.core
+      (:require [cljs.nodejs :as nodejs]))
+
+    (nodejs/enable-util-print!)
+
+    (defn -main  [& args]
+      (println "Hello world!"))
+
+    (set! *main-cli-fn* -main)
 
 !SLIDE small
 
@@ -45,7 +62,6 @@ Download [ClojureScript](https://github.com/clojure/clojurescript/releases/downl
       :watch "src/node"
       :output-dir "node_repl")
 
-
 !SLIDE small
 
 # Browser Setup ClojureScript Side
@@ -56,6 +72,8 @@ Download [ClojureScript](https://github.com/clojure/clojurescript/releases/downl
 
     (defonce conn
       (repl/connect "http://localhost:9000/repl"))
+
+    (enable-console-print!)
 
 !SLIDE small transition=fade
 
