@@ -6,7 +6,7 @@
 
 `node` server side JavaScript, this will allow you to run a repl without starting a browser
 
-## Starting without a build tool                                                                                I
+## Starting without a build tool
 
 ### Setup
 
@@ -30,10 +30,13 @@ Run `lein deps` to install the tools for the figwheel, cljs-dev-tools, and dirac
 
 Run `scripts/figwheel_repl.sh`. This runs the following command `lein with-profile +figwheel run -m clojure.main build/figwheel_repl.clj`
 
-### FigWheel repl with CLjS Dev tools
+### FigWheel repl with CLJS Dev tools
 
 Run `scripts/devtools_repl.sh`. This runs the following command `lein with-profile +devtools run -m clojure.main build/devtools_repl.clj`
+CLJS Devtools  functionality only works with Chrome / Chromium  devtools
 
 ### FigWheel repl with Dirac
 
 Run `scripts/dirac_repl.sh`. This runs the following command `lein with-profile +dirac run -m clojure.main build/dirac_repl.clj`
+This needs the [Dirac Chrome Extenstion](https://chrome.google.com/webstore/detail/dirac-devtools/kbkdngfljkchidcjpnfcgcokkbhlkog://chrome.google.com/webstore/detail/dirac-devtools/kbkdngfljkchidcjpnfcgcokkbhlkogi)
+You'll need to start the browser like so `<Chrome Chromium> --remote-debugging-port=9222`
