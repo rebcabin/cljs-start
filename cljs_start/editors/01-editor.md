@@ -4,11 +4,11 @@
 
 !SLIDE
 
-## You can do a lot with console figwheel and editor with Clojure support
+# You can do a lot with figwheel and editor with Clojure support
 
 !SLIDE
 
-## Not many editors with great ClojureScript REPL support
+# Not many editors with great ClojureScript REPL support
 
 !SLIDE
 
@@ -16,22 +16,38 @@
 - Emacs
 - Cursive
 
-
 !SLIDE
 
 # Vim
-## Needs piggieback
+## Clojure Plugins
+- piggieback
 
-    @@@ bash
-    9000
-    (starts basic browser repl)
+## Plugins
+- [Vim Fireplace](https://github.com/tpope/vim-fireplace)
+- [Vim Clojure Static](https://github.com/guns/vim-clojure-static)
 
-    @@@ bash
-    (cljs.repl.node/repl-env)
-    (starts basic node repl)
 !SLIDE
 
-# Emacs
+## Browser Repl
+
+    @@@ bash
+    :Piggieback 9000
+
+## Node Repl
+
+    @@@ bash
+    :Piggieback (cljs.repl.node/repl-env)
+
+!SLIDE
+
+# Emacs Plugins
+
+- inf-clojure.
+- exec-path-from-shell (for node on OSX)
+
+!SLIDE
+
+# Repl Setup
 
     @@@ lisp
     (defun cljs-node-repl ()
@@ -40,7 +56,7 @@
 
 !SLIDE small
 
-# Cusrive
+# Cusrive (from Figwheel wiki)
 - Click __Run->Edit__ configurations.
 - Click the `+` button at the top left and choose **Clojure REPL**
 - Choose a **Local REPL**

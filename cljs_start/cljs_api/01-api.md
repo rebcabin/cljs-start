@@ -15,7 +15,7 @@
     @@@ clojure
     (cljs.build.api/build
       "src"
-      {:main 'core.start
+      {:main "core.start"
        :output-to "out/app.js"})
 - Takes a ClojureScript source directory and map of options
 - One shot compilation to JavaScript
@@ -86,6 +86,7 @@
     :output-dir "out"
 
 - Where compilation files are to be stored
+- Main files entourage
 - Cache files, source maps, JavaScript files
 
 !SLIDE bullets
@@ -93,10 +94,7 @@
     @@@@ clojure
     :asset-path "js"
 
-- So that
-- "http://localhost/js"
-- points to
-- "./resources/public/js"
+so that "http://localhost/js" points to "./resources/public/js"
 
 !SLIDE
 

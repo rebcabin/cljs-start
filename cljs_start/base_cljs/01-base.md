@@ -86,7 +86,7 @@ Download [ClojureScript](https://github.com/clojure/clojurescript/releases/downl
 
     (cljs.build.api/build
       "src/browser"
-      {:main 'start.core
+      {:main "start.core"
        :output-to "browser_repl/main.js"
        :output-dir "browser_repl"
        :verbose true})
@@ -96,3 +96,7 @@ Download [ClojureScript](https://github.com/clojure/clojurescript/releases/downl
       :watch "src/browser"
       :output-dir "browser_repl"
       :output-to "browser_repl/main.js")
+
+!SLIDE
+
+![intermission](https://i.ytimg.com/vi/YwJARMUtCnE/maxresdefault.jpg)

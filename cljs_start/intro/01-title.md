@@ -6,6 +6,10 @@
 ## by Peter Schuck
 ## @spinningtopsofdoom
 
+!SLIDE
+
+Play along at https://github.com/spinningtopsofdoom/cljs-start
+
 !SLIDE small
 
 ## ClojureScript has always had a great story for production
@@ -26,4 +30,4 @@
 
 - Needed lein and three different plugins to work semi correctly
 - Compilation was slow and buggy
-- Fragile jenga tower that would break with slight nudges
+- Changing anything was like playing blind jenga
