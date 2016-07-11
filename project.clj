@@ -14,9 +14,9 @@
                   [org.clojure/clojurescript "1.9.89"]
                   [com.cemerick/piggieback "0.2.1"]
                   [org.clojure/tools.nrepl "0.2.11"]
-                  [figwheel-sidecar "0.5.0-6"]
-                  [binaryage/devtools "0.5.2"]
-                  [binaryage/dirac "0.1.3"]]
+                  [figwheel-sidecar "0.5.4-7"]
+                  [binaryage/devtools "0.7.2"]
+                  [binaryage/dirac "0.6.2"]]
 
   :profiles  {:dirac {:source-paths ["src/dirac"]
                       :repl-options {:port 8230
