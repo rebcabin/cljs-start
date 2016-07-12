@@ -1,8 +1,10 @@
 (ns start.core
-  (:require  [devtools.core :as devtools]))
+  (:require
+    [dirac.runtime :as dirac]
+    [devtools.core :as devtools]))
 
-(devtools/enable-feature! :sanity-hints :dirac)
 (devtools/install!)
+(dirac/install!)
 
 (def state  (atom  []))
 
