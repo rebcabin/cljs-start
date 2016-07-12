@@ -18,12 +18,7 @@
                   [binaryage/devtools "0.7.2"]
                   [binaryage/dirac "0.6.2"]]
 
-  :profiles  {:dirac {:source-paths ["src/dirac"]
-                      :repl-options {:port 8230
-                                     :nrepl-middleware [dirac.nrepl.middleware/dirac-repl]
-                                     :init (do
-                                             (require 'dirac.agent)
-                                             (dirac.agent/boot!))}}
+  :profiles  {:dirac {:source-paths ["src/dirac"]}
               :devtools {:source-paths ["src/devtools"]}
               :figwheel {:source-paths ["src/figwheel"]}
               :browser {:source-paths ["src/browser"]
