@@ -1,7 +1,7 @@
 (println "Loading requirements")
 (require '[figwheel-sidecar.repl-api :as ra]
          '[clojure.tools.nrepl.server :as s]
-         '[dirac.nrepl.middleware :as dm]
+         '[dirac.nrepl :as dn]
          '[dirac.agent :as da])
 ; Figwheel configuration
 (println "Starting Figwheel")
@@ -23,10 +23,7 @@
 (ra/start-autobuild)
 ; Dirac NRepl setup
 (println "Setting up NRepl with dirac middleware")
-(defonce server (s/start-server :port 8230 :handler (s/default-handler #'dm/dirac-repl)))
+(defonce server (s/start-server :port 8230 :handler (s/default-handler #'dn/middleware)))
 ; Start Dirac Agent
 (println "Starting Dirac Agent")
 (da/boot!)
-; Start Clojure Repl
-(println "Start Clojure Repl")
-(clojure.main/repl)
