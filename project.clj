@@ -16,7 +16,8 @@
                   [org.clojure/tools.nrepl "0.2.11"]
                   [figwheel-sidecar "0.5.4-7"]
                   [binaryage/devtools "0.7.2"]
-                  [binaryage/dirac "0.6.2"]]
+                  [binaryage/dirac "0.6.2"]
+                  [reply "0.3.7"]]
 
   :profiles  {:dirac {:source-paths ["src/dirac"]}
               :devtools {:source-paths ["src/devtools"]}
