@@ -12,18 +12,8 @@
 
   :dependencies  [[org.clojure/clojure "1.8.0"]
                   [org.clojure/clojurescript "1.9.89"]
-                  [com.cemerick/piggieback "0.2.1"]
                   [org.clojure/tools.nrepl "0.2.11"]
                   [figwheel-sidecar "0.5.4-7"]
                   [binaryage/devtools "0.7.2"]
                   [binaryage/dirac "0.6.2"]
-                  [reply "0.3.7"]]
-
-  :profiles  {:dirac {:source-paths ["src/dirac"]}
-              :devtools {:source-paths ["src/devtools"]}
-              :figwheel {:source-paths ["src/figwheel"]}
-              :browser {:source-paths ["src/browser"]
-                        :repl-options  {:nrepl-middleware  [cemerick.piggieback/wrap-cljs-repl]}}
-              :node  {:source-paths ["src/node"]
-                      :repl-options  {:nrepl-middleware  [cemerick.piggieback/wrap-cljs-repl]
-                                      :init (require 'cljs.repl.node)}}})
+                  [reply "0.3.7"]])

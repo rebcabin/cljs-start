@@ -3,13 +3,16 @@
 (require 'cljs.repl.node)
 
 (cljs.build.api/build
-  "src/node"
+  "src/main"
   {:target :nodejs
+   :preloads '[repl.node]
+   :main 'repl.core
    :output-to "resources/node_repl/main.js"
    :output-dir "resources/node_repl"
    :verbose true})
 
 (cljs.repl/repl
   (cljs.repl.node/repl-env)
-  :watch "src/node"
+  :preloads '[repl.node]
+  :watch "src/main"
   :output-dir "resources/node_repl")

@@ -8,7 +8,8 @@
    [{:id "dev"
      :figwheel true
      :source-paths  ["src/devtools"]
-     :compiler  {:main 'start.core
+     :compiler  {:preloads '[repl.devtools]
+                 :main 'repl.core
                  :asset-path "js"
                  :output-to "resources/public/js/app.js"
                  :output-dir "resources/public/js"

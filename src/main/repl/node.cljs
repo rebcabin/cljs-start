@@ -1,12 +1,11 @@
-(ns start.core
+(ns repl.node
   (:require [cljs.nodejs :as nodejs]))
 
 (nodejs/enable-util-print!)
 
 (defn -main  [& args]
-    (println "Hello world!"))
-
-(defn foo  [a b]
-  (+ a b))
+  (println "Node Main Function"))
 
 (set! *main-cli-fn* -main)
+
+(println "Node REPL started")

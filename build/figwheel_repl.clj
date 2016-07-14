@@ -7,8 +7,9 @@
    :all-builds
    [{:id "dev"
      :figwheel true
-     :source-paths  ["src/figwheel"]
-     :compiler  {:main 'start.core
+     :source-paths  ["src/main"]
+     :compiler  {:preloads '[repl.figwheel]
+                 :main 'repl.core
                  :asset-path "js"
                  :output-to "resources/public/js/app.js"
                  :output-dir "resources/public/js"

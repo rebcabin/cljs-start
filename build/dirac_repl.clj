@@ -12,15 +12,16 @@
    :all-builds
    [{:id "dev"
      :figwheel true
-     :source-paths  ["src/dirac"]
-     :compiler  {:main 'start.core
+     :source-paths  ["src/main"]
+     :compiler  {:preloads '[repl.dirac]
+                 :main 'repl.core
                  :asset-path "js"
                  :output-to "resources/public/js/app.js"
                  :output-dir "resources/public/js"
                  :source-map true
                  :verbose true}}]})
 ; Figwheel autobuild
-(println "Autobuilding figwheel")
+(println "Autobuilding with figwheel")
 (ra/start-autobuild)
 ; Dirac NRepl setup
 (def port 8230)
