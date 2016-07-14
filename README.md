@@ -27,14 +27,25 @@ Connect the repl by going to http://localhost:9000
 
 Run `lein deps` to install the tools for the figwheel, cljs-dev-tools, and dirac repls
 
+### Node repl
+
+Run `scripts/base_node_repl.sh`. This runs the following command `java -cp lib/*:src/node clojure.main build/node_repl.clj`
+
+### Browser repl
+
+Run `scripts/base_browser_repl.sh`. This runs the following command  `java -cp lib/*:src/browser clojure.main build/browser_repl.clj`
+Connect the repl by going to http://localhost:9000
+
 ### FigWheel repl
 
-Run `scripts/figwheel_repl.sh`. This runs the following command `lein with-profile +figwheel run -m clojure.main build/figwheel_repl.clj`
+Run `scripts/figwheel_repl.sh`. This runs the following command `lein run -m clojure.main build/figwheel_repl.clj`
+Connect the repl by going to http://localhost:3449
 
 ### FigWheel repl with CLJS Dev tools
 
-Run `scripts/devtools_repl.sh`. This runs the following command `lein with-profile +devtools run -m clojure.main build/devtools_repl.clj`
-CLJS Devtools  functionality only works with Chrome / Chromium  devtools
+Run `scripts/devtools_repl.sh`. This runs the following command `lein run -m clojure.main build/devtools_repl.clj`
+CLJS Devtools functionality only works with Chrome / Chromium devtools
+Connect the repl by going to http://localhost:3449
 
 ### FigWheel repl with Dirac
 
@@ -42,18 +53,7 @@ This needs the [Dirac Chrome Extenstion](https://chrome.google.com/webstore/deta
 
 You'll need to start the browser like so `<Chrome Chromium> --remote-debugging-port=9222`
 
-Run `scripts/dirac_repl.sh`. This runs the following command `lein with-profile +dirac repl`
-After the repl has started run the following code in it to start the ClojureScript REPL
-``` clojure
-(require 'cljs.repl)
-(require 'cljs.repl.browser)
-
-(cljs.repl/repl
-  (cljs.repl.browser/repl-env)
-  :main 'start.core
-  :watch "src/browser"
-  :output-dir "resources/browser_repl"
-  :output-to "resources/browser_repl/main.js")
-```
-
-Connect the repl by going to http://localhost:9000
+Run `scripts/dirac_repl.sh`. This runs the following command `lein run -m clojure.main build/dirac_repl.clj`
+This repl also sets up an nrepl connection at port `8230`
+To connect to the dirac repl from the command line or from an nrepl connection you need to run the command `(diarc! :join)`
+Connect the repl by going to http://localhost:3449 and then clicking on dirac devtools extension.
