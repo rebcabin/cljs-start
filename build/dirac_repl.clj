@@ -28,7 +28,10 @@
 (defonce server (s/start-server :port port :handler (s/default-handler #'dn/middleware)))
 ; Start Dirac Agent
 (println "Starting Dirac Agent")
-@(da/boot!)
+(def dirac-booted (da/boot!))
 ; Start Dirac Repl
-(println "Starting Dirac Repl")
-(-> {:color true :skip-default-init true} (assoc :attach (str "localhost" ":" port)) reply/launch-nrepl)
+(future
+  @dirac-booted
+  (println "Starting Dirac Repl")
+  (-> {:color true :skip-default-init true} (assoc :attach (str "localhost" ":" port)) reply/launch-nrepl)
+  (System/exit 0))
