@@ -1,5 +1,13 @@
 # Starting with ClojureScript
 
+## Running Presentation
+
+Install [showoff](https://github.com/puppetlabs/showoff) with this command `bundle install`
+
+After showoff has been install run `showoff serve`
+
+and then navigate to `localhost:9090`
+
 ## Optional third party tools
 
 `rlwrap`, a tool that makes command line repls more usable, called with `rlwrap <repl command>`
