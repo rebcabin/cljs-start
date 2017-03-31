@@ -2,7 +2,7 @@
 
 ## Basic ClojureScript setup
 
-Download [ClojureScript](https://github.com/clojure/clojurescript/releases/download/r1.7.228/cljs.jar) standalone jar
+Download [ClojureScript](https://github.com/clojure/clojurescript/releases/download/r1.9.473/cljs.jar) standalone jar
 
 [rlwrap](http://utopia.knoware.nl/~hlub/uck/rlwrap/)  makes base command line repl much more usable
 
