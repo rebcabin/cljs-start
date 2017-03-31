@@ -72,7 +72,7 @@
 ## [CLJS Devtools](https://github.com/binaryage/cljs-devtools)
 
     @@@ clojure
-    [binaryage/devtools "0.5.2"]
+    [binaryage/devtools "0.9.2"]
 
 - Gives much better presentation of ClojureScript values
 - More informative exceptions
