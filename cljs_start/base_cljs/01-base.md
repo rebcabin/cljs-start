@@ -67,7 +67,7 @@ Download [ClojureScript](https://github.com/clojure/clojurescript/releases/downl
 # Browser Setup ClojureScript Side
 
     @@@ clojure
-    (ns start.core
+    (ns start.preloads
       (:require [clojure.browser.repl :as repl]))
 
     (defonce conn
@@ -87,16 +87,18 @@ Download [ClojureScript](https://github.com/clojure/clojurescript/releases/downl
     (cljs.build.api/build
       "src/browser"
       {:main "start.core"
+       :preloads '[start.preloads]
        :output-to "browser_repl/main.js"
        :output-dir "browser_repl"
        :verbose true})
 
     (cljs.repl/repl
       (cljs.repl.browser/repl-env)
+      :preloads '[start.preloads]
       :watch "src/browser"
       :output-dir "browser_repl"
       :output-to "browser_repl/main.js")
 
 !SLIDE
 
-![intermission](https://i.ytimg.com/vi/YwJARMUtCnE/maxresdefault.jpg)
+![intermission](../../images/intermission.jpg)

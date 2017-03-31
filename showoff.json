@@ -1,10 +1,11 @@
 { "name": "Barcalounger ClojureScript: How to setup a stylish and comfortable ClojureScript development environment ",
-  "highlight": "solarized_dark",
+  "highlight": "github",
   "sections": [
       {"section":"cljs_start/intro"},
       {"section":"cljs_start/cljs_api"},
       {"section":"cljs_start/base_cljs"},
       {"section":"cljs_start/advanced_cljs"},
       {"section":"cljs_start/editors"},
+      {"section":"cljs_start/performance"},
       {"section":"cljs_start/outro"}
   ]}

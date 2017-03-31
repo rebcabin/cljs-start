@@ -75,6 +75,14 @@
 !SLIDE
 
     @@@@ clojure
+    :preloads '[my.dev.env]
+
+- Side loads namespaces into build
+- Use to load development functionality out side out source code
+
+!SLIDE
+
+    @@@@ clojure
     :target :nodejs
 
 - Compile ClojureScript for node

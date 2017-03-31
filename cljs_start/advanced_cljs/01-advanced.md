@@ -22,12 +22,12 @@
 # As lein plugin
 
     @@@ clojure
-    [lein-figwheel "0.5.0-6"]
+    [lein-figwheel "0.5.9"]
 
 # As library
 
     @@@ clojure
-    [figwheel-sidecar "0.5.0-6"]
+    [figwheel-sidecar "0.5.9"]
 
 !SLIDE
 
@@ -61,11 +61,11 @@
 
 !SLIDE
 
-![Base ClojureScript Data Structure Display](http://www.alexeberts.com/wp-content/uploads/2015/04/cljs-objects.png)
+![Base ClojureScript Data Structure Display](../../images/base_cljs_inspect_object.png)
 
 !SLIDE
 
-![ClojureScript Dev Tools Display](https://camo.githubusercontent.com/f8c02b2efd374cc41f5f269a0a0606e9847d8c16/68747470733a2f2f646c2e64726f70626f7875736572636f6e74656e742e636f6d2f752f3535393034372f636c6a732d646576746f6f6c732d73616d706c652d66756c6c2e706e67)
+![Base ClojureScript Dev Tools Display](../../images/devtools_cljs_inspect_object.png)
 
 !SLIDE
 
@@ -96,7 +96,7 @@
 # [Dirac](https://github.com/binaryage/dirac)
 
     @@@ clojure
-    [binaryage/dirac "0.1.3"]
+    [binaryage/dirac "1.2.3"]
 
 - Repl with Paninfer in devtools console
 - even inside a breakpoint
