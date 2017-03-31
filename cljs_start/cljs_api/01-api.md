@@ -32,7 +32,7 @@
 - Takes a REPL environment and option key value pairs
 - Recompiles anytime files in the `:watch` directory change
 
-!SLIDE small
+!SLIDE
 
 ## cljs.build.api/inputs
 
@@ -129,14 +129,14 @@ so that "http://localhost/js" points to "./resources/public/js"
 - Shows compiled JavaScript before returning result
 - Learning how compilation works
 
-!SLIDE small transition=fade
+!SLIDE
 
 # From this
 
     @@@ clojure
     #{1 2}
 
-!SLIDE small transition=fade
+!SLIDE
 
 # To this
 

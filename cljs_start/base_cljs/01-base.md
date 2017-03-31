@@ -26,7 +26,7 @@ Download [ClojureScript](https://github.com/clojure/clojurescript/releases/downl
     lein run -m clojure.main repl.clj
 
 
-!SLIDE small
+!SLIDE
 
 # Node Setup ClojureScript Setup
 
@@ -41,7 +41,7 @@ Download [ClojureScript](https://github.com/clojure/clojurescript/releases/downl
 
     (set! *main-cli-fn* -main)
 
-!SLIDE small
+!SLIDE
 
 # Node Setup
 
@@ -62,7 +62,7 @@ Download [ClojureScript](https://github.com/clojure/clojurescript/releases/downl
       :watch "src/node"
       :output-dir "node_repl")
 
-!SLIDE small
+!SLIDE
 
 # Browser Setup ClojureScript Side
 
@@ -75,7 +75,7 @@ Download [ClojureScript](https://github.com/clojure/clojurescript/releases/downl
 
     (enable-console-print!)
 
-!SLIDE small transition=fade
+!SLIDE
 
 # Browser Setup
 

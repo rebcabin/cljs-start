@@ -54,7 +54,7 @@
       (interactive)
         (run-clojure "java -cp cljs.jar clojure.main repl.clj"))
 
-!SLIDE small
+!SLIDE
 
 # Cusrive (from Figwheel wiki)
 - Click __Run->Edit__ configurations.

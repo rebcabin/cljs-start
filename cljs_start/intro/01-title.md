@@ -1,16 +1,16 @@
 !SLIDE
 
-# Barcalounger ClojureScript
-## Stylish and Comfortable ClojureScript Development
+# ClojureScript Up and Running
 
+<br />
+<br />
+<br />
+<br />
+<br />
 ## by Peter Schuck
 ## @spinningtopsofdoom
 
 !SLIDE
-
-Play along at https://github.com/spinningtopsofdoom/cljs-start
-
-!SLIDE small
 
 ## ClojureScript has always had a great story for production
 - Dead code elimination
@@ -18,15 +18,15 @@ Play along at https://github.com/spinningtopsofdoom/cljs-start
 - First class data structures and libraries (e.g. core.aysnc)
 - Module support
 
-!SLIDE transition=fade
+!SLIDE
 
 ## ClojureScript development tooling however...
 
-!SLIDE transition=fade
+!SLIDE
 
-![Internet Explorer 6 debugging](http://icant.co.uk/forreview/browsertests/msie_js_error.gif)
+![Internet Explorer 6 debugging](../../images/msie_js_error.jpeg)
 
-!SLIDE bullets incremental transition=scrollUp
+!SLIDE
 
 - Needed lein and three different plugins to work semi correctly
 - Compilation was slow and buggy

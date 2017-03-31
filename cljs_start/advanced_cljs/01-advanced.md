@@ -29,7 +29,7 @@
     @@@ clojure
     [figwheel-sidecar "0.5.0-6"]
 
-!SLIDE small
+!SLIDE
 
     @@@ clojure
     (require '[figwheel-sidecar.repl-api :as ra])
@@ -49,7 +49,7 @@
 
     (ra/cljs-repl)
 
-!SLIDE bullets incremental
+!SLIDE
 
 ## Added bonus
 - have repl running on the command line
@@ -59,11 +59,11 @@
 
 # Debugging ClojureScript in browser
 
-!SLIDE transition=fade
+!SLIDE
 
 ![Base ClojureScript Data Structure Display](http://www.alexeberts.com/wp-content/uploads/2015/04/cljs-objects.png)
 
-!SLIDE transition=fade
+!SLIDE
 
 ![ClojureScript Dev Tools Display](https://camo.githubusercontent.com/f8c02b2efd374cc41f5f269a0a0606e9847d8c16/68747470733a2f2f646c2e64726f70626f7875736572636f6e74656e742e636f6d2f752f3535393034372f636c6a732d646576746f6f6c732d73616d706c652d66756c6c2e706e67)
 
@@ -112,7 +112,7 @@
 - Nrepl with dirac middleware
 - Dirac agent
 
-!SLIDE small
+!SLIDE
 
     @@@ clojure
     (ns start.core
@@ -127,7 +127,7 @@
     <chrome or chromium> \
       --remote-debugging-port=9222
 
-!SLIDE small
+!SLIDE
 
 ## Lein options
 
